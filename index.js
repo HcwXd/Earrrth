@@ -97,6 +97,8 @@ function addNewRecord() {
   total_coin.innerHTML = totalCoins;
   newItem.innerHTML = html;
   today_record_wrap.prepend(newItem);
+  newItem.classList.add('item_hidden');
+
   recordIdx++;
   if (recordIdx === records.length) recordIdx = 0;
 }
