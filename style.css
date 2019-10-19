@@ -27,6 +27,27 @@ body, html {
   background-color: #f5f5f5;
   padding: 20px;
   border-radius: 37px;
+  height: 40%;
+}
+
+.record_list_wrap .record_top_wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.record_list_wrap .record_top_wrap .separate {
+  width: 58px;
+  height: 3px;
+  opacity: 0.3;
+  border-radius: 1.5px;
+  background-color: #5ebf00;
 }
 
 .record_list_wrap .daily_wrap {

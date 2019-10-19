@@ -12,7 +12,6 @@ window.onclick = function(event) {
 
 function getRecordHtml(record) {
   const { title, subtitle, coin, type } = record;
-
   const html =
     type === 'commute'
       ? `<div class="item_wrap">
@@ -190,7 +189,7 @@ function getRecordHtml(record) {
   return html;
 }
 
-function initData(records) {
+function initData() {
   const yesterday_record_wrap = document.querySelector('#yesterday_record');
   console.log(yesterday_records);
   const html = `<div class="daily_title">Yesterday</div>${yesterday_records
