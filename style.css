@@ -24,6 +24,15 @@ body, html {
   display: none !important;
 }
 
+#earth_div {
+  top: 0;
+  right: 0;
+  bottom: 50%;
+  left: 0;
+  background-color: #000;
+  position: absolute !important;
+}
+
 .modal_background {
   position: absolute;
   z-index: 100;
