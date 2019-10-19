@@ -1,0 +1,117 @@
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h4 {
+  margin-top: 16px;
+  margin-bottom: 0px;
+  color: #858585;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  z-index: 1;
+  display: block;
+  left: 0px;
+  top: calc(100% - 256px);
+  background-color: #f5f5f5;
+  width: 100%;
+  border-top-left-radius: 37px;
+  border-top-right-radius: 37px;
+  padding: 0 2rem 1rem;
+}
+
+.modal-content:hover {
+  bottom: 0px;
+  top: inherit;
+}
+
+.modal-header {
+  text-align: center;
+}
+
+.separate {
+  display: inline-block;
+  background-color: #5ebf00;
+  width: 58px;
+  height: 3px;
+  border-radius: 1.5px;
+}
+
+.modal-body {
+  color: white;
+}
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.item div {
+  vertical-align: middle;
+}
+
+.item div img {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.item div div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.item div div p {
+  margin-top: 0px;
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #70d70b;
+}
+
+.item div div small {
+  font-size: 14px;
+  font-weight: normal;
+  color: #a4a4a4;
+}
+
+.item div .mask {
+  display: inline-block;
+  margin: 0px;
+  vertical-align: middle;
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+}
+
+.item div h1 {
+  display: inline-block;
+  margin: 0px;
+  vertical-align: middle;
+  font-size: 28px;
+  color: #70d70b;
+}
+
+img {
+  border-radius: 5px;
+}
+/*# sourceMappingURL=style.css.map */
