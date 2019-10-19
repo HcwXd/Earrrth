@@ -2,6 +2,7 @@ const record_list_wrap = document.querySelector('.record_list_wrap');
 const add_btn = document.querySelector('.add_btn');
 let isModalOpen = false;
 let totalCoins = 256;
+let recordIdx = 0;
 
 add_btn.addEventListener('click', toggleShowBurgur);
 
@@ -91,11 +92,13 @@ modal_btn.addEventListener('click', () => {
 function addNewRecord() {
   const today_record_wrap = document.querySelector('#today_record');
   const newItem = document.createElement('div');
-  const html = getRecordHtml(records[0], true);
-  totalCoins += records[0].coin;
+  const html = getRecordHtml(records[recordIdx], true);
+  totalCoins += records[recordIdx].coin;
   total_coin.innerHTML = totalCoins;
   newItem.innerHTML = html;
   today_record_wrap.prepend(newItem);
+  recordIdx++;
+  if (recordIdx === records.length) recordIdx = 0;
 }
 const burger_menu = document.querySelector('.burger_menu');
 
@@ -124,3 +127,6 @@ document.querySelector('#book-info').addEventListener('click', () => {
 document.querySelector('#social').addEventListener('click', () => {
   document.querySelector('#social').classList.add('hidden');
 });
+
+const total_coin_wrap = document.querySelector('.total_coin_wrap');
+total_coin_wrap.addEventListener('click', addNewRecord);
