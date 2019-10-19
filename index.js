@@ -195,13 +195,6 @@ function initData() {
   yesterday_record_wrap.innerHTML = html;
 }
 
-function addNewRecord() {
-  const today_record_wrap = document.querySelector('#today_record');
-  const newItem = document.createElement('div');
-  const html = getRecordHtml(records[0], true);
-  newItem.innerHTML = html;
-  today_record_wrap.prepend(newItem);
-}
 initData();
 
 const separate = document.querySelector('.separate');
@@ -216,3 +209,13 @@ const modal_btn = document.querySelector('.modal_btn');
 modal_btn.addEventListener('click', () => {
   document.querySelector('.modal_background').classList.add('hidden');
 });
+
+function addNewRecord() {
+  const today_record_wrap = document.querySelector('#today_record');
+  const newItem = document.createElement('div');
+  const html = getRecordHtml(records[0], true);
+  totalCoins += records[0].coin;
+  total_coin.innerHTML = totalCoins;
+  newItem.innerHTML = html;
+  today_record_wrap.prepend(newItem);
+}

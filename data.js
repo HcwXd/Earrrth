@@ -30,4 +30,11 @@ const yesterday_records = [
     coin: 26,
     color: '#70d70b',
   },
+  {
+    title: '捷運',
+    type: 'commute',
+    subtitle: '1.2 km',
+    coin: 4,
+    color: '#4861ff',
+  },
 ];
