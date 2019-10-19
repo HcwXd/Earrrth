@@ -75,13 +75,30 @@ body, html {
   background-color: #dddddd;
 }
 
+.record_list_wrap .daily_wrap .item_wrap .item_left_wrap .food {
+  background-color: #dbffb8;
+}
+
+.record_list_wrap .daily_wrap .item_wrap .item_left_wrap .commute {
+  background-color: #b8e6ff;
+}
+
 .record_list_wrap .daily_wrap .item_wrap .item_left_wrap .item_title_wrap {
   margin-left: 10px;
 }
 
 .record_list_wrap .daily_wrap .item_wrap .item_left_wrap .item_title_wrap .item_title {
+  color: #4861ff;
   font-size: 18px;
   font-weight: 600;
+}
+
+.record_list_wrap .daily_wrap .item_wrap .item_left_wrap .item_title_wrap .food_title {
+  color: #70d70b;
+}
+
+.record_list_wrap .daily_wrap .item_wrap .item_left_wrap .item_title_wrap .commute_title {
+  color: #4861ff;
 }
 
 .record_list_wrap .daily_wrap .item_wrap .item_left_wrap .item_title_wrap .item_subtitle {
