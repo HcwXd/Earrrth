@@ -208,6 +208,7 @@ body, html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 10px;
 }
 
 .record_list_wrap .record_top_wrap {
@@ -337,6 +338,7 @@ body, html {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-right: 10px;
 }
 
 .record_list_wrap .daily_wrap .item_wrap .item_right_wrap .item_coin {
