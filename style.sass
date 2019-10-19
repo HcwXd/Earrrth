@@ -12,6 +12,51 @@ body,html
   border: 1px solid black
   margin-top: 10px
   margin-left: 10px
+.hidden
+  display: none !important
+.modal_background
+  position: absolute
+  z-index: 100
+  top: 0
+  right: 0
+  left: 0
+  bottom: 0
+  background-color: rgba(#000000,0.49)
+  display: flex
+  align-items: center
+  justify-content: space-around
+  .modal_wrap   
+    background-color: #ffffff
+    width: 315px
+    display: flex
+    flex-direction: column
+    align-items: center
+    border-radius: 10px
+    padding: 21px
+    .modal_title
+      font-size: 24px
+      font-weight: 500
+      margin-top: 36px
+      color: #5a5656
+    .modal_img
+      img
+        height: 157px
+    .modal_desc
+      padding: 25px 10px
+      font-size: 17px
+      font-weight: 500
+      color: #818181
+      text-align: center
+    .modal_btn
+      border-radius: 4px
+      background-color: #37a601
+      width: 247px
+      height: 40px
+      display: flex
+      align-items: center
+      justify-content: space-around
+      color: #ffffff
+      cursor: pointer
 .record_list_wrap-active
   height: 80% !important
 .record_list_wrap

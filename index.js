@@ -4,12 +4,6 @@ let isModalOpen = false;
 let totalCoins = 256;
 
 add_btn.addEventListener('click', addNewRecord);
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = 'none';
-  }
-};
 
 function getRecordHtml(record, add = false) {
   const { title, subtitle, coin, type } = record;
@@ -217,3 +211,8 @@ separate.addEventListener('click', () => {
 
 const total_coin = document.querySelector('.total_coin');
 total_coin.innerHTML = totalCoins;
+
+const modal_btn = document.querySelector('.modal_btn');
+modal_btn.addEventListener('click', () => {
+  document.querySelector('.modal_background').classList.add('hidden');
+});
