@@ -1,0 +1,38 @@
+const imageTileJson = {
+  name: 'SWISSIMAGE 25m',
+  description: 'The Digital Color Orthophotomosaic of Switzerland',
+  attribution: 'Federal Office of Topography, swisstopo',
+  type: 'baselayer',
+  version: '1',
+  format: 'jpg',
+  minzoom: 6,
+  maxzoom: 12,
+  bounds: [5.894335, 45.669276, 10.567622, 47.8415],
+  basename: 'swissimage25m',
+  profile: 'mercator',
+  scale: 1,
+  tiles: [
+    'https://gibs.earthdata.nasa.gov/twms/epsg4326/best/twms.cgi?request=GetMap&layers=MODIS_Terra_CorrectedReflectance_TrueColor&srs=EPSG:4326&format=image/jpeg&styles=&time=2012-07-09&width=512&height=512&bbox=-18,27,-13.5,31.5',
+  ],
+  tilejson: '2.0.0',
+  scheme: 'xyz',
+};
+
+const windTileJson = {
+  name: 'Weather Underground',
+  description: '',
+  attribution: '',
+  type: 'overlay',
+  version: '1',
+  format: 'png',
+  minzoom: 0,
+  maxzoom: 6,
+  bounds: [-179.999941, -60.010742, 179.993412, 59.982],
+  scale: '1',
+  basename: 'weather',
+  profile: 'mercator',
+  tiles: ['http://tileserver.maptiler.com/weather/{z}/{x}/{y}.png'],
+  tilejson: '2.0.0',
+  scheme: 'xyz',
+  grids: ['http://tileserver.maptiler.com/weather/{z}/{x}/{y}.grid.json'],
+};
