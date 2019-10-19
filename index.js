@@ -3,7 +3,7 @@ const add_btn = document.querySelector('.add_btn');
 let isModalOpen = false;
 let totalCoins = 256;
 
-add_btn.addEventListener('click', addNewRecord);
+add_btn.addEventListener('click', toggleShowBurgur);
 
 function getRecordHtml(record, add = false) {
   const { title, subtitle, coin, type } = record;
@@ -96,4 +96,9 @@ function addNewRecord() {
   total_coin.innerHTML = totalCoins;
   newItem.innerHTML = html;
   today_record_wrap.prepend(newItem);
+}
+
+function toggleShowBurgur() {
+  const burger_menu = document.querySelector('.burger_menu');
+  burger_menu.classList.toggle('hidden');
 }

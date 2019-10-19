@@ -14,12 +14,50 @@ body, html {
 
 .add_btn {
   position: absolute;
-  border-radius: 4px;
-  padding: 4px 8px;
-  border: 1px solid black;
-  top: 10px;
-  left: 10px;
+  border-radius: 100%;
+  top: 36px;
+  left: 15px;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(0, 0, 0, 0.12);
+  border: 0px solid #000;
   z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.add_btn span {
+  width: 22px;
+  height: 2px;
+  border-radius: 3.5px;
+  background-color: #ffffff;
+}
+
+.burger_menu {
+  position: absolute;
+  top: 90px;
+  left: 20px;
+  -webkit-box-shadow: 2px 2px 14px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 2px 2px 14px 0 rgba(0, 0, 0, 0.15);
+}
+
+.burger_menu .burger_item {
+  padding: 14px 21px;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(216, 216, 216, 0.41);
+  cursor: pointer;
 }
 
 .hidden {

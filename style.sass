@@ -8,12 +8,37 @@ body,html
   padding: 0
 .add_btn
   position: absolute
-  border-radius: 4px
-  padding: 4px 8px
-  border: 1px solid black
-  top: 10px
-  left: 10px
+  border-radius: 100%
+  top: 36px
+  left: 15px
+  width: 48px
+  height: 48px
+  background-color: rgba(#000000,0.12)
+  border: 0px solid #000
   z-index: 100
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  align-items: center
+  padding: 12px
+  cursor: pointer
+  span
+    width: 22px
+    height: 2px
+    border-radius: 3.5px
+    background-color: #ffffff
+    
+.burger_menu
+  position: absolute
+  top: 90px
+  left: 20px
+  box-shadow: 2px 2px 14px 0 rgba(0, 0, 0, 0.15)
+  .burger_item
+    padding: 14px 21px
+    background-color: #ffffff
+    border-bottom: 1px solid rgba(#d8d8d8,0.41)
+    cursor: pointer
+    
 .hidden
   display: none !important
 #earth_div 
