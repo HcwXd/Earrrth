@@ -186,11 +186,9 @@ function getRecordHtml(record, add = false) {
 
 function initData() {
   const yesterday_record_wrap = document.querySelector('#yesterday_record');
-  console.log(yesterday_records);
   const html = `<div class="daily_title">Yesterday</div>${yesterday_records
     .map((record) => getRecordHtml(record))
     .join('')}`;
-  console.log(html, yesterday_records);
 
   yesterday_record_wrap.innerHTML = html;
 }
