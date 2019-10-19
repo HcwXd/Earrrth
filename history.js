@@ -1,0 +1,17 @@
+const history = [
+  'https://climate.nasa.gov/system/time_series_images/x944_co2_2002_9_0000_720x360.jpg.pagespeed.ic.oivi23xAPq.webp',
+  'https://climate.nasa.gov/system/time_series_images/x956_co2_2003_9_0012_720x360.jpg.pagespeed.ic.-ehVWOZcNL.webp',
+  'https://climate.nasa.gov/system/time_series_images/x968_co2_2004_9_0024_720x360.jpg.pagespeed.ic.YimRNSEGaJ.webp',
+  'https://climate.nasa.gov/system/time_series_images/x980_co2_2005_9_0036_720x360.jpg.pagespeed.ic._c8ZZLsxEH.webp',
+  'https://climate.nasa.gov/system/time_series_images/x992_co2_2006_9_0048_720x360.jpg.pagespeed.ic.N6EN7gM-vg.webp',
+  'https://climate.nasa.gov/system/time_series_images/x1004_co2_2007_9_0060_720x360.jpg.pagespeed.ic.3H_H4UF0up.webp',
+  'https://climate.nasa.gov/system/time_series_images/x1016_co2_2008_9_0072_720x360.jpg.pagespeed.ic.HBMV7gwtQt.webp',
+  'https://climate.nasa.gov/system/time_series_images/x1028_co2_2009_9_0084_720x360.jpg.pagespeed.ic.pDhGag8Y5e.webp',
+  'https://climate.nasa.gov/system/time_series_images/x1040_co2_2010_9_0096_720x360.jpg.pagespeed.ic.JSrNqAaJxB.webp',
+  'https://climate.nasa.gov/system/time_series_images/x1052_co2_2011_9_0108_720x360.jpg.pagespeed.ic.qXhh8XJZxG.webp',
+  'https://climate.nasa.gov/system/time_series_images/x1064_co2_2012_9_0120_720x360.jpg.pagespeed.ic.Q2uAJMfbYc.webp',
+  'https://climate.nasa.gov/system/time_series_images/x1076_co2_2013_9_0132_720x360.jpg.pagespeed.ic.x5ydjtkeAG.webp',
+  'https://climate.nasa.gov/system/time_series_images/x1088_co2_2014_9_0144_720x360.jpg.pagespeed.ic.TiA_LwCcOh.webp',
+  'https://climate.nasa.gov/system/time_series_images/x1100_co2_2015_9_0156_720x360.jpg.pagespeed.ic.y44JcMEUIT.webp',
+  'https://climate.nasa.gov/system/time_series_images/x1112_co2_2016_9_0168_720x360.jpg.pagespeed.ic.fFMJNJt9SD.webp',
+];

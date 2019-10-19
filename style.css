@@ -65,6 +65,30 @@ body, html {
   height: 100%;
 }
 
+.time_slider_wrap {
+  position: absolute;
+  top: 68%;
+  z-index: 10;
+  left: 4px;
+  width: 365px;
+  height: 74px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.85);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.time_slider_wrap .time_slider {
+  height: 30px;
+  width: 50px;
+}
+
 .modal_background {
   position: absolute;
   z-index: 100;
@@ -138,6 +162,10 @@ body, html {
 
 .record_list_wrap-active {
   height: 80% !important;
+}
+
+.record_list_wrap-shorten {
+  height: 20% !important;
 }
 
 .record_list_wrap {
