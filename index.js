@@ -104,6 +104,7 @@ function toggleShowBurgur() {
 }
 
 burger_menu.querySelector('.book').addEventListener('click', () => {
+  burger_menu.classList.add('hidden');
   document.querySelector('#book').classList.toggle('hidden');
 });
 
@@ -112,6 +113,7 @@ document.querySelector('#book').addEventListener('click', () => {
   document.querySelector('#book').classList.add('hidden');
 });
 burger_menu.querySelector('.social').addEventListener('click', () => {
+  burger_menu.classList.add('hidden');
   document.querySelector('#social').classList.toggle('hidden');
 });
 
