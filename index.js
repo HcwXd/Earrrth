@@ -2,6 +2,7 @@ const record_list_wrap = document.querySelector('.record_list_wrap');
 const add_btn = document.querySelector('.add_btn');
 let isModalOpen = false;
 let totalCoins = 3216;
+let currentYears = 1995;
 let recordIdx = 0;
 const kangarooCoins = 3255;
 
@@ -82,6 +83,9 @@ separate.addEventListener('click', () => {
   record_list_wrap.classList.toggle('record_list_wrap-active');
 });
 
+const current_year = document.querySelector('.current_year');
+current_year.innerHTML = currentYears;
+
 const total_coin = document.querySelector('.total_coin');
 total_coin.innerHTML = totalCoins;
 
@@ -97,6 +101,8 @@ function addNewRecord() {
   const html = getRecordHtml(records[recordIdx], true);
   if ((totalCoins < kangarooCoins) & (totalCoins + records[recordIdx].coin > kangarooCoins)) {
     modal_background.classList.remove('hidden');
+    currentYears = 1994;
+    current_year.innerHTML = currentYears;
   }
   totalCoins += records[recordIdx].coin;
   total_coin.innerHTML = totalCoins;
