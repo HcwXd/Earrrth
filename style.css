@@ -36,6 +36,35 @@ body, html {
           transition-duration: 300ms;
 }
 
+.record_list_wrap .total_coin_wrap {
+  position: absolute;
+  top: -50px;
+  right: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 17px;
+  background-color: #f5f5f5;
+  padding: 5px 15px 5px 10px;
+}
+
+.record_list_wrap .total_coin_wrap .earth_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .record_list_wrap .record_top_wrap {
   width: 100%;
   display: -webkit-box;
@@ -65,6 +94,13 @@ body, html {
   color: #9b9b9b;
 }
 
+.record_list_wrap .daily_wrap .item_hidden {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
 .record_list_wrap .daily_wrap .item_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -77,6 +113,9 @@ body, html {
           align-items: center;
   padding: 16px 0;
   border-bottom: 1px solid #e2e2e2;
+  height: 80px;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
 }
 
 .record_list_wrap .daily_wrap .item_wrap .item_left_wrap {

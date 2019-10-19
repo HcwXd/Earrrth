@@ -1,6 +1,7 @@
 const record_list_wrap = document.querySelector('.record_list_wrap');
 const add_btn = document.querySelector('.add_btn');
 let isModalOpen = false;
+let totalCoins = 256;
 
 add_btn.addEventListener('click', addNewRecord);
 // When the user clicks anywhere outside of the modal, close it
@@ -206,10 +207,6 @@ function addNewRecord() {
   const html = getRecordHtml(records[0], true);
   newItem.innerHTML = html;
   today_record_wrap.prepend(newItem);
-
-  setTimeout(() => {
-    today_record_wrap.querySelector('.item_hidden').classList.remove('item_hidden');
-  }, 1000);
 }
 initData();
 
@@ -217,3 +214,6 @@ const separate = document.querySelector('.separate');
 separate.addEventListener('click', () => {
   record_list_wrap.classList.toggle('record_list_wrap-active');
 });
+
+const total_coin = document.querySelector('.total_coin');
+total_coin.innerHTML = totalCoins;
