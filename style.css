@@ -13,11 +13,13 @@ body, html {
 }
 
 .add_btn {
+  position: absolute;
   border-radius: 4px;
   padding: 4px 8px;
   border: 1px solid black;
-  margin-top: 10px;
-  margin-left: 10px;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
 }
 
 .hidden {
@@ -25,11 +27,29 @@ body, html {
 }
 
 #earth_div {
+  z-index: 0;
   top: 0;
   right: 0;
   bottom: 50%;
   left: 0;
-  background-color: #000;
+  background-color: white;
+  position: absolute !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mask {
+  z-index: 30;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 234px;
+  height: 234px;
+  border-radius: 100%;
   position: absolute !important;
 }
 

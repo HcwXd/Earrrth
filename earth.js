@@ -8,7 +8,7 @@ WE.tileLayer('http://tileserver.maptiler.com/nasa/{z}/{x}/{y}.jpg', {
 }).addTo(earth);
 
 // const imageTile = addLayer(imageTileJson);
-// const windTile = addLayer(windTileJson);
+const windTile = addLayer(windTileJson);
 // const blackTile = addLayer(blackTileJson);
 rotate();
 
