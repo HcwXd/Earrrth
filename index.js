@@ -10,11 +10,11 @@ window.onclick = function(event) {
   }
 };
 
-function getRecordHtml(record) {
+function getRecordHtml(record, add = false) {
   const { title, subtitle, coin, type } = record;
   const html =
     type === 'commute'
-      ? `<div class="item_wrap">
+      ? `<div class="item_wrap ${add && 'item_hidden'}">
           <div class="item_left_wrap">
             <div class="item_icon commute">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
@@ -203,8 +203,17 @@ function initData() {
 function addNewRecord() {
   const today_record_wrap = document.querySelector('#today_record');
   const newItem = document.createElement('div');
-  const html = getRecordHtml(records[0]);
+  const html = getRecordHtml(records[0], true);
   newItem.innerHTML = html;
-  today_record_wrap.appendChild(newItem);
+  today_record_wrap.prepend(newItem);
+
+  setTimeout(() => {
+    today_record_wrap.querySelector('.item_hidden').classList.remove('item_hidden');
+  }, 1000);
 }
 initData();
+
+const separate = document.querySelector('.separate');
+separate.addEventListener('click', () => {
+  record_list_wrap.classList.toggle('record_list_wrap-active');
+});

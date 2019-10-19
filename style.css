@@ -20,6 +20,10 @@ body, html {
   margin-left: 10px;
 }
 
+.record_list_wrap-active {
+  height: 80% !important;
+}
+
 .record_list_wrap {
   position: fixed;
   bottom: 0;
@@ -28,6 +32,8 @@ body, html {
   padding: 20px;
   border-radius: 37px;
   height: 40%;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
 }
 
 .record_list_wrap .record_top_wrap {
@@ -48,6 +54,7 @@ body, html {
   opacity: 0.3;
   border-radius: 1.5px;
   background-color: #5ebf00;
+  cursor: pointer;
 }
 
 .record_list_wrap .daily_wrap {

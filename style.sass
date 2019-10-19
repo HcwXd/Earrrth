@@ -12,6 +12,8 @@ body,html
   border: 1px solid black
   margin-top: 10px
   margin-left: 10px
+.record_list_wrap-active
+  height: 80% !important
 .record_list_wrap
   position: fixed
   bottom: 0
@@ -20,6 +22,7 @@ body,html
   padding: 20px
   border-radius: 37px
   height: 40%
+  transition-duration: 300ms
   .record_top_wrap
     width: 100%
     display: flex
@@ -31,10 +34,14 @@ body,html
       opacity: 0.3
       border-radius: 1.5px
       background-color: #5ebf00
+      cursor: pointer
   .daily_wrap
     padding-top: 16px
     .daily_title
       color: #9b9b9b
+    .item_hidden
+      // height: 0
+      // transition-duration: 300ms  
     .item_wrap
       display: flex
       justify-content: space-between
