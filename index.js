@@ -137,3 +137,22 @@ document.querySelector('#social').addEventListener('click', () => {
 
 const total_coin_wrap = document.querySelector('.total_coin_wrap');
 total_coin_wrap.addEventListener('click', addNewRecord);
+
+document.querySelector('#landing').addEventListener('click', () => {
+  document.querySelector('#landing').classList.add('hidden');
+  document.querySelector('#step1').classList.remove('hidden');
+});
+
+document.querySelector('#step1').addEventListener('click', () => {
+  document.querySelector('#step1').classList.add('hidden');
+  document.querySelector('#step2').classList.remove('hidden');
+});
+
+document.querySelector('#step2').addEventListener('click', () => {
+  document.querySelector('#step2').classList.add('hidden');
+  document.querySelector('#step3').classList.remove('hidden');
+});
+
+document.querySelector('#step3').addEventListener('click', () => {
+  document.querySelector('#step3').classList.add('hidden');
+});
