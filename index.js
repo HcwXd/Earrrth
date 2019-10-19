@@ -97,8 +97,28 @@ function addNewRecord() {
   newItem.innerHTML = html;
   today_record_wrap.prepend(newItem);
 }
+const burger_menu = document.querySelector('.burger_menu');
 
 function toggleShowBurgur() {
-  const burger_menu = document.querySelector('.burger_menu');
   burger_menu.classList.toggle('hidden');
 }
+
+burger_menu.querySelector('.book').addEventListener('click', () => {
+  document.querySelector('#book').classList.toggle('hidden');
+});
+
+document.querySelector('#book').addEventListener('click', () => {
+  document.querySelector('#book-info').classList.remove('hidden');
+  document.querySelector('#book').classList.add('hidden');
+});
+burger_menu.querySelector('.social').addEventListener('click', () => {
+  document.querySelector('#social').classList.toggle('hidden');
+});
+
+document.querySelector('#book-info').addEventListener('click', () => {
+  document.querySelector('#book-info').classList.add('hidden');
+});
+
+document.querySelector('#social').addEventListener('click', () => {
+  document.querySelector('#social').classList.add('hidden');
+});
