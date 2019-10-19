@@ -1,8 +1,9 @@
 const record_list_wrap = document.querySelector('.record_list_wrap');
 const add_btn = document.querySelector('.add_btn');
 let isModalOpen = false;
-let totalCoins = 256;
+let totalCoins = 3216;
 let recordIdx = 0;
+const kangarooCoins = 3255;
 
 add_btn.addEventListener('click', toggleShowBurgur);
 
@@ -85,20 +86,24 @@ const total_coin = document.querySelector('.total_coin');
 total_coin.innerHTML = totalCoins;
 
 const modal_btn = document.querySelector('.modal_btn');
+const modal_background = document.querySelector('.modal_background');
 modal_btn.addEventListener('click', () => {
-  document.querySelector('.modal_background').classList.add('hidden');
+  modal_background.classList.add('hidden');
 });
 
 function addNewRecord() {
   const today_record_wrap = document.querySelector('#today_record');
   const newItem = document.createElement('div');
   const html = getRecordHtml(records[recordIdx], true);
+  if ((totalCoins < kangarooCoins) & (totalCoins + records[recordIdx].coin > kangarooCoins)) {
+    modal_background.classList.remove('hidden');
+  }
   totalCoins += records[recordIdx].coin;
   total_coin.innerHTML = totalCoins;
+
   newItem.innerHTML = html;
   today_record_wrap.prepend(newItem);
   newItem.classList.add('item_hidden');
-
   recordIdx++;
   if (recordIdx === records.length) recordIdx = 0;
 }
