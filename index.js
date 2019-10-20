@@ -162,3 +162,8 @@ document.querySelector('#step2').addEventListener('click', () => {
 document.querySelector('#step3').addEventListener('click', () => {
   document.querySelector('#step3').classList.add('hidden');
 });
+
+const time_slider = document.querySelector('.time_slider');
+time_slider.addEventListener('change', function(e) {
+  console.log(e.target.value);
+});

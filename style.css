@@ -124,10 +124,18 @@ body, html {
   position: absolute;
   top: 0;
   bottom: 20%;
+  right: 0;
+  left: 0;
   z-index: 1;
+  overflow: hidden;
+  background-image: url("https://climate.nasa.gov/system/time_series_images/x1046_co2_2011_3_0102_720x360.jpg.pagespeed.ic.0OQ_muZ_3T.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 #history img {
+  overflow: hidden;
   width: 100%;
   height: 100%;
 }
@@ -226,7 +234,7 @@ body, html {
 
 .record_list_wrap .time_slider_wrap {
   position: absolute;
-  top: -100px;
+  top: -130px;
   z-index: 10;
   left: 4px;
   width: 365px;
@@ -236,8 +244,24 @@ body, html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.record_list_wrap .time_slider_wrap .max_min_year {
+  padding: 0 15px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -247,6 +271,9 @@ body, html {
   height: 30px;
   width: 100%;
   border: 1px solid black;
+  padding: 0 15px;
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 
 .record_list_wrap .current_year {
