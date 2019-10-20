@@ -2,7 +2,7 @@ const record_list_wrap = document.querySelector('.record_list_wrap');
 const add_btn = document.querySelector('.add_btn');
 let isModalOpen = false;
 let totalCoins = 3216;
-let currentYears = 1995;
+let currentYears = 2019;
 let recordIdx = 0;
 const kangarooCoins = 3240;
 
@@ -115,6 +115,10 @@ function addNewRecord() {
 }
 const burger_menu = document.querySelector('.burger_menu');
 
+document.querySelector('.cesium-credit-textContainer').addEventListener('click', () => {
+  document.querySelector('.mask').style.backgroundColor = `rgba(0,0,0,0.0)`;
+});
+
 function toggleShowBurgur() {
   burger_menu.classList.toggle('hidden');
 }
@@ -139,6 +143,7 @@ document.querySelector('#book-info').addEventListener('click', () => {
 
 document.querySelector('#social').addEventListener('click', () => {
   document.querySelector('#social').classList.add('hidden');
+  document.querySelector('#ending').classList.remove('hidden');
 });
 
 const total_coin_wrap = document.querySelector('.total_coin_wrap');
