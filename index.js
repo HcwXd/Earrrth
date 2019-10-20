@@ -33,7 +33,7 @@ function getRecordHtml(record, add = false) {
           </div>
           <div class="item_right_wrap">
             <div class="earth_icon">
-              <img src="./earth.svg" />
+              <img src="./images/earth.svg" />
             </div>
             <div class="item_coin">${coin}</div>
           </div>
@@ -59,7 +59,7 @@ function getRecordHtml(record, add = false) {
           </div>
           <div class="item_right_wrap">
             <div class="earth_icon">
-              <img src="./earth.svg" />
+              <img src="./images/earth.svg" />
             </div>
             <div class="item_coin">${coin}</div>
           </div>
