@@ -99,10 +99,10 @@ function addNewRecord() {
   const today_record_wrap = document.querySelector('#today_record');
   const newItem = document.createElement('div');
   const html = getRecordHtml(records[recordIdx], true);
+  currentYears = 1994;
+  current_year.innerHTML = currentYears;
   if ((totalCoins < kangarooCoins) & (totalCoins + records[recordIdx].coin > kangarooCoins)) {
     modal_background.classList.remove('hidden');
-    currentYears = 1994;
-    current_year.innerHTML = currentYears;
   }
   totalCoins += records[recordIdx].coin;
   total_coin.innerHTML = totalCoins;
