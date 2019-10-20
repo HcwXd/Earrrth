@@ -166,4 +166,22 @@ document.querySelector('#step3').addEventListener('click', () => {
 const time_slider = document.querySelector('.time_slider');
 time_slider.addEventListener('change', function(e) {
   console.log(e.target.value);
+  if (e.target.value < 1930)
+    document.querySelector('#history').style.backgroundImage = `url(${history[0]}`;
+  else if (e.target.value < 1940)
+    document.querySelector('#history').style.backgroundImage = `url(${history[1]}`;
+  else if (e.target.value < 1950)
+    document.querySelector('#history').style.backgroundImage = `url(${history[2]}`;
+  else if (e.target.value < 1960)
+    document.querySelector('#history').style.backgroundImage = `url(${history[4]}`;
+  else if (e.target.value < 1970)
+    document.querySelector('#history').style.backgroundImage = `url(${history[6]}`;
+  else if (e.target.value < 1980)
+    document.querySelector('#history').style.backgroundImage = `url(${history[8]}`;
+  else if (e.target.value < 1990)
+    document.querySelector('#history').style.backgroundImage = `url(${history[10]}`;
+  else if (e.target.value < 2000)
+    document.querySelector('#history').style.backgroundImage = `url(${history[12]}`;
+  else if (e.target.value < 2010)
+    document.querySelector('#history').style.backgroundImage = `url(${history[14]}`;
 });
