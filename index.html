@@ -111,6 +111,21 @@
       <div class="daily_wrap" id="yesterday_record"></div>
     </div>
   </body>
+  <script>
+    let w, h;
+    if (window.outerHeight) {
+      w = window.outerWidth;
+      h = window.outerHeight;
+    } else {
+      w = document.body.clientWidth;
+      h = document.body.clientHeight;
+    }
+    if (w > 500) {
+      alert(
+        'Hi! The website now only available on mobile. Please use mobile to view the website and enjoy a better experience'
+      );
+    }
+  </script>
   <script src="tileJson.js"></script>
   <script src="earth.js"></script>
   <script src="data.js"></script>
