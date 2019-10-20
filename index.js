@@ -4,7 +4,7 @@ let isModalOpen = false;
 let totalCoins = 3216;
 let currentYears = 1995;
 let recordIdx = 0;
-const kangarooCoins = 3255;
+const kangarooCoins = 3240;
 
 add_btn.addEventListener('click', toggleShowBurgur);
 
