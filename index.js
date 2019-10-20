@@ -185,3 +185,8 @@ time_slider.addEventListener('change', function(e) {
   else if (e.target.value < 2010)
     document.querySelector('#history').style.backgroundImage = `url(${history[14]}`;
 });
+
+current_year.addEventListener('click', () => {
+  document.querySelector('#history').classList.toggle('hidden');
+  document.querySelector('.time_slider_wrap').classList.toggle('hidden');
+});
