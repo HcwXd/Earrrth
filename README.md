@@ -1,8 +1,10 @@
-# Earth
+# Earrrth
+
+![Earrrth](https://github.com/HcwXd/Earrrth/blob/master/images/Project%20Image.png?raw=true)
 
 We aim to develop an APP with a light and fun vibe, and hope to help users make more eco-friendly choices through the view of compering CO2 emission
 
-TechStack: HTML, CSS, JS, Minimap.js, Ngrok, AWS S3
+TechStack: HTML, CSS, JS, WebGL
 NASA: Historical Photography, Data In The Map
 
 E-payment is mainly used in Food ,transportation industries nowadays ,and also are those industries that plays a big role in carbon emissions.
